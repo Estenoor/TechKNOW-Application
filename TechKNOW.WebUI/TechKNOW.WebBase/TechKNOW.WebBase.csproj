@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-TechKNOW.WebBase-05985746-FD30-4CAE-958B-35A2D888CFAE</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\BackEnd\Controllers\" />
+    <Folder Include="Areas\BackEnd\Data\" />
+    <Folder Include="Areas\BackEnd\Models\" />
+    <Folder Include="Areas\BackEnd\Views\" />
+    <Folder Include="Areas\Identity\Services\" />
+  </ItemGroup>
+
+</Project>
