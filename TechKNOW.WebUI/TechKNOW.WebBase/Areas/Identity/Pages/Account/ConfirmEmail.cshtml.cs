@@ -6,16 +6,15 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TechKNOW.WebBase.Areas.Identity.Data;
 
 namespace TechKNOW.WebBase.Areas.Identity.Pages.Account
 {
     [AllowAnonymous]
     public class ConfirmEmailModel : PageModel
     {
-        private readonly UserManager<TechKNOWWebBaseUser> _userManager;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public ConfirmEmailModel(UserManager<TechKNOWWebBaseUser> userManager)
+        public ConfirmEmailModel(UserManager<IdentityUser> userManager)
         {
             _userManager = userManager;
         }

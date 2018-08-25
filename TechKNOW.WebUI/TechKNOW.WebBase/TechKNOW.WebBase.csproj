@@ -11,11 +11,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\BackEnd\Controllers\" />
-    <Folder Include="Areas\BackEnd\Data\" />
-    <Folder Include="Areas\BackEnd\Models\" />
-    <Folder Include="Areas\BackEnd\Views\" />
+    <Folder Include="Areas\API\Controllers\" />
+    <Folder Include="Areas\API\Data\" />
+    <Folder Include="Areas\API\Models\" />
+    <Folder Include="Areas\API\Views\" />
     <Folder Include="Areas\Identity\Services\" />
+    <Folder Include="Models\EntityModel\" />
   </ItemGroup>
 
 </Project>

@@ -6,19 +6,18 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using TechKNOW.WebBase.Areas.Identity.Data;
 
 namespace TechKNOW.WebBase.Areas.Identity.Pages.Account.Manage
 {
     public class ResetAuthenticatorModel : PageModel
     {
-        UserManager<TechKNOWWebBaseUser> _userManager;
-        private readonly SignInManager<TechKNOWWebBaseUser> _signInManager;
+        UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
         ILogger<ResetAuthenticatorModel> _logger;
 
         public ResetAuthenticatorModel(
-            UserManager<TechKNOWWebBaseUser> userManager,
-            SignInManager<TechKNOWWebBaseUser> signInManager,
+            UserManager<IdentityUser> userManager,
+            SignInManager<IdentityUser> signInManager,
             ILogger<ResetAuthenticatorModel> logger)
         {
             _userManager = userManager;

@@ -6,18 +6,17 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using TechKNOW.WebBase.Areas.Identity.Data;
 
 namespace TechKNOW.WebBase.Areas.Identity.Pages.Account.Manage
 {
     public class SetPasswordModel : PageModel
     {
-        private readonly UserManager<TechKNOWWebBaseUser> _userManager;
-        private readonly SignInManager<TechKNOWWebBaseUser> _signInManager;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
 
         public SetPasswordModel(
-            UserManager<TechKNOWWebBaseUser> userManager,
-            SignInManager<TechKNOWWebBaseUser> signInManager)
+            UserManager<IdentityUser> userManager,
+            SignInManager<IdentityUser> signInManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;

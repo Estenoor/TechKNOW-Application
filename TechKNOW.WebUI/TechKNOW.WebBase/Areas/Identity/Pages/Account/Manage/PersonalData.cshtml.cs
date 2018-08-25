@@ -3,17 +3,16 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using TechKNOW.WebBase.Areas.Identity.Data;
 
 namespace TechKNOW.WebBase.Areas.Identity.Pages.Account.Manage
 {
     public class PersonalDataModel : PageModel
     {
-        private readonly UserManager<TechKNOWWebBaseUser> _userManager;
+        private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<PersonalDataModel> _logger;
 
         public PersonalDataModel(
-            UserManager<TechKNOWWebBaseUser> userManager,
+            UserManager<IdentityUser> userManager,
             ILogger<PersonalDataModel> logger)
         {
             _userManager = userManager;
